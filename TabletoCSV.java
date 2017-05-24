@@ -31,6 +31,11 @@ public class TabletoCSV
 			    
 			    	csvFilePrinter = new CSVPrinter(fileWriter,format);
 			    	csvFilePrinter.printRecords(x);
+//*******************************add this line Rajesh************************************//
+				fileWriter.flush();
+			    	fileWriter.close();
+			    	csvFilePrinter.close();
+//*******************************End of line Rajesh************************************//
 			    
 				}
 				catch(Exception e)
